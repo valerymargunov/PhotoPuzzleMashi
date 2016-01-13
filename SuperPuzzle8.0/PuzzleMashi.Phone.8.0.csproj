@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83D9D4FA-E3FC-4623-9A3D-AAAD8CFF0A77}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhotoPuzzle</RootNamespace>
+    <AssemblyName>SuperPuzzle8.0</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>be-BY%3bfr-FR%3bde-DE%3bit-IT%3bpl-PL%3bpt-PT%3bru-RU%3bes-ES%3buk-UA</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>SuperPuzzle8._0_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>SuperPuzzle8._0.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;WINDOWS_PHONE8;FREE8</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;WINDOWS_PHONE8;FREE8</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\PhotoPuzzle\GameGlobal.cs">
+      <Link>GameGlobal.cs</Link>
+    </Compile>
+    <Compile Include="..\PhotoPuzzle\GameInterface.xaml.cs">
+      <Link>GameInterface.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\PhotoPuzzle\Helpers\ImageRepository.cs">
+      <Link>Helpers\ImageRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\PhotoPuzzle\LocalizedStrings.cs">
+      <Link>LocalizedStrings.cs</Link>
+    </Compile>
+    <Compile Include="..\PhotoPuzzle\MainPage.xaml.cs">
+      <Link>MainPage.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\PhotoPuzzle\Tile.xaml.cs">
+      <Link>Tile.xaml.cs</Link>
+    </Compile>
+    <Compile Include="Advertising\AdsMob.cs" />
+    <Compile Include="Advertising\AdsMyGames.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\PopupMessage.cs" />
+    <Compile Include="Helpers\StoreHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll">
+      <Link>Langs\AppResLib.dll</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\1.jpg">
+      <Link>Res\Image\Masha\1.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\10.jpg">
+      <Link>Res\Image\Masha\10.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\11.jpg">
+      <Link>Res\Image\Masha\11.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\12.jpg">
+      <Link>Res\Image\Masha\12.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\13.jpg">
+      <Link>Res\Image\Masha\13.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\1331331260_levtor_org.jpg">
+      <Link>Res\Image\Masha\1331331260_levtor_org.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\1343205959_82.jpg">
+      <Link>Res\Image\Masha\1343205959_82.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\181963336.jpg">
+      <Link>Res\Image\Masha\181963336.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\2.jpg">
+      <Link>Res\Image\Masha\2.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\23889el.jpg">
+      <Link>Res\Image\Masha\23889el.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\4.jpg">
+      <Link>Res\Image\Masha\4.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\4x576.jpg">
+      <Link>Res\Image\Masha\4x576.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\5.jpg">
+      <Link>Res\Image\Masha\5.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\6.jpg">
+      <Link>Res\Image\Masha\6.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\7.jpg">
+      <Link>Res\Image\Masha\7.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\8.jpg">
+      <Link>Res\Image\Masha\8.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\99706_w465_h260_ff.jpg">
+      <Link>Res\Image\Masha\99706_w465_h260_ff.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\gg.jpg">
+      <Link>Res\Image\Masha\gg.jpg</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\Image\Masha\masha-i-medved.jpg">
+      <Link>Res\Image\Masha\masha-i-medved.jpg</Link>
+    </Content>
+    <Content Include="Images\games\b_300.png" />
+    <Content Include="Images\games\cc-300.png" />
+    <Content Include="Images\games\fw-300.png" />
+    <Content Include="Images\games\mt-300.png" />
+    <Content Include="Images\games\tp-300.png" />
+    <Content Include="pm300.png" />
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0401.mui">
+      <Link>Langs\AppResLib.dll.0401.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0402.mui">
+      <Link>Langs\AppResLib.dll.0402.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0403.mui">
+      <Link>Langs\AppResLib.dll.0403.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0404.mui">
+      <Link>Langs\AppResLib.dll.0404.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0405.mui">
+      <Link>Langs\AppResLib.dll.0405.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0406.mui">
+      <Link>Langs\AppResLib.dll.0406.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0407.mui">
+      <Link>Langs\AppResLib.dll.0407.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0408.mui">
+      <Link>Langs\AppResLib.dll.0408.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0409.mui">
+      <Link>Langs\AppResLib.dll.0409.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.040B.mui">
+      <Link>Langs\AppResLib.dll.040B.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.040c.mui">
+      <Link>Langs\AppResLib.dll.040c.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.040D.mui">
+      <Link>Langs\AppResLib.dll.040D.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.040E.mui">
+      <Link>Langs\AppResLib.dll.040E.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0410.mui">
+      <Link>Langs\AppResLib.dll.0410.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0411.mui">
+      <Link>Langs\AppResLib.dll.0411.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0412.mui">
+      <Link>Langs\AppResLib.dll.0412.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0413.mui">
+      <Link>Langs\AppResLib.dll.0413.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0414.mui">
+      <Link>Langs\AppResLib.dll.0414.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0415.mui">
+      <Link>Langs\AppResLib.dll.0415.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0416.mui">
+      <Link>Langs\AppResLib.dll.0416.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0418.mui">
+      <Link>Langs\AppResLib.dll.0418.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0419.mui">
+      <Link>Langs\AppResLib.dll.0419.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.041A.mui">
+      <Link>Langs\AppResLib.dll.041A.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.041B.mui">
+      <Link>Langs\AppResLib.dll.041B.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.041C.mui">
+      <Link>Langs\AppResLib.dll.041C.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.041D.mui">
+      <Link>Langs\AppResLib.dll.041D.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.041E.mui">
+      <Link>Langs\AppResLib.dll.041E.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.041F.mui">
+      <Link>Langs\AppResLib.dll.041F.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0421.mui">
+      <Link>Langs\AppResLib.dll.0421.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0422.mui">
+      <Link>Langs\AppResLib.dll.0422.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0423.mui">
+      <Link>Langs\AppResLib.dll.0423.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0424.mui">
+      <Link>Langs\AppResLib.dll.0424.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0425.mui">
+      <Link>Langs\AppResLib.dll.0425.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0426.mui">
+      <Link>Langs\AppResLib.dll.0426.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0427.mui">
+      <Link>Langs\AppResLib.dll.0427.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0429.mui">
+      <Link>Langs\AppResLib.dll.0429.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.042A.mui">
+      <Link>Langs\AppResLib.dll.042A.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.042C.mui">
+      <Link>Langs\AppResLib.dll.042C.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.042F.mui">
+      <Link>Langs\AppResLib.dll.042F.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0439.mui">
+      <Link>Langs\AppResLib.dll.0439.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.043e.mui">
+      <Link>Langs\AppResLib.dll.043e.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.043F.mui">
+      <Link>Langs\AppResLib.dll.043F.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0443.mui">
+      <Link>Langs\AppResLib.dll.0443.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0464.mui">
+      <Link>Langs\AppResLib.dll.0464.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0804.mui">
+      <Link>Langs\AppResLib.dll.0804.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0809.mui">
+      <Link>Langs\AppResLib.dll.0809.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.080A.mui">
+      <Link>Langs\AppResLib.dll.080A.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0816.mui">
+      <Link>Langs\AppResLib.dll.0816.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.081A.mui">
+      <Link>Langs\AppResLib.dll.081A.mui</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Langs\AppResLib.dll.0c0a.mui">
+      <Link>Langs\AppResLib.dll.0c0a.mui</Link>
+    </Content>
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\PhotoPuzzle\Res\go-back.png">
+      <Link>Res\go-back.png</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\help-button.png">
+      <Link>Res\help-button.png</Link>
+    </Content>
+    <Content Include="..\PhotoPuzzle\Res\novfon.jpg">
+      <Link>Res\novfon.jpg</Link>
+    </Content>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\PhotoPuzzle\GameInterface.xaml">
+      <Link>GameInterface.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\PhotoPuzzle\MainPage.xaml">
+      <Link>MainPage.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\PhotoPuzzle\Tile.xaml">
+      <Link>Tile.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AppPromo.WP8">
+      <HintPath>..\packages\AppPromo.1.0.0.9\lib\wp8\AppPromo.WP8.dll</HintPath>
+    </Reference>
+    <Reference Include="Coding4Fun.Toolkit">
+      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.1.7\lib\windowsphone8\Coding4Fun.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Coding4Fun.Toolkit.Controls">
+      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.1.7\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAds">
+      <HintPath>..\..\Google SDK for Windows Phone\GoogleMobileAdsSdkWindowsPhone8-6.5.13\lib\windowsphone8\GoogleAds.dll</HintPath>
+    </Reference>
+    <Reference Include="WriteableBitmapExWinPhone">
+      <HintPath>..\packages\WriteableBitmapEx.1.5.0.0\lib\WindowsPhone8\WriteableBitmapExWinPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="WriteableBitmapExWinPhoneXnaDependant">
+      <HintPath>..\packages\WriteableBitmapEx.1.5.0.0\lib\WindowsPhone8\WriteableBitmapExWinPhoneXnaDependant.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.be-BY.resx" />
+    <EmbeddedResource Include="Resources\AppResources.de-DE.resx" />
+    <EmbeddedResource Include="Resources\AppResources.es-ES.resx" />
+    <EmbeddedResource Include="Resources\AppResources.fr-FR.resx" />
+    <EmbeddedResource Include="Resources\AppResources.it-IT.resx" />
+    <EmbeddedResource Include="Resources\AppResources.pl-PL.resx" />
+    <EmbeddedResource Include="Resources\AppResources.pt-PT.resx" />
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.ru-RU.resx" />
+    <EmbeddedResource Include="Resources\AppResources.uk-UA.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

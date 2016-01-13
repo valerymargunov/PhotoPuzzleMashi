@@ -1,0 +1,97 @@
+﻿<Page
+    x:Class="PuzzleMash._8._1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PuzzleMash._8._1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Res/novfon.jpg"/>
+        </Grid.Background>
+
+        <!--<VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="WindowsSizeStates">
+                <VisualState x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="CountPartsText.FonSize" Value="50"/>
+                        <Setter Target="SliderAmount.FonSize" Value="50"/>
+                        <Setter Target="countPartsBorder.Height" Value="60"/>
+                        
+                        <Setter Target="startGame.Width" Value="300"/>
+                        <Setter Target="countParts.Width" Value="300"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>-->
+
+        <ListBox x:Name="ListImages" SelectionChanged="ListImages_SelectionChanged" HorizontalContentAlignment="Stretch" Margin="10">
+            <ListBox.ItemsPanel >
+                <ItemsPanelTemplate>
+                    <StackPanel Background="Black">
+
+                    </StackPanel>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Margin="0" BorderThickness="0" BorderBrush="White" HorizontalAlignment="Stretch" VerticalAlignment="Center" Tapped="Border_Tap">
+                        <Image Source="{Binding ImageSource}"/>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.Template>
+                <ControlTemplate TargetType="ListBox">
+                    <Border>
+                        <ScrollViewer Name="scrollViewerMessages">
+                            <ItemsPresenter/>
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </ListBox.Template>
+        </ListBox>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="0.2*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid Margin="0,25,0,25">
+                        <Border x:Name="countPartsBorder" Grid.Row="1" CornerRadius="10" Height="35" VerticalAlignment="Top" Background="Black" Margin="-10,5,-10,0" Opacity="0.6"></Border>
+                        <StackPanel Grid.Row="1" Margin="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <TextBlock x:Uid="CountParts" x:Name="CountPartsText" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,10,0" FontSize="25" FontWeight="Bold" FontFamily="Comic Sans MS" Foreground="White"></TextBlock>
+                            <TextBlock x:Name="SliderAmount" Text="24" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" FontSize="25" FontWeight="Bold" FontFamily="Comic Sans MS" Foreground="White" HorizontalAlignment="Center"></TextBlock>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Margin="0,25,0,25">
+                        <Slider Grid.Row="1" x:Name="countParts" Width="{Binding ElementName=startGame, Path=ActualWidth}" HorizontalAlignment="Center" VerticalAlignment="Center" Minimum="2" Maximum="10" Background="Black" Value="4" ValueChanged="Slider_ValueChanged" Style="{StaticResource SliderStyle}"/>
+                    </Grid>
+                    <Grid Margin="0,25,0,25" x:Name="playGrid">
+                        <Button Grid.Row="2" x:Uid="Play" x:Name="startGame" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource StartButton}" Click="startGame_Click" />
+                    </Grid>
+                </StackPanel>
+            </Grid>
+            <Button Grid.Row="2" x:Name="backButton" Margin="5" VerticalAlignment="Center"  BorderBrush="#56000000" Foreground="#FF121212" HorizontalAlignment="Right" Background="#AC2D0602" Tapped="backButton_Tapped">
+                <Image Source="Res/go-back.png" Stretch="Uniform"/>
+            </Button>
+        </Grid>
+        <ProgressRing x:Name="progressRing" Grid.ColumnSpan="2" IsActive="True" Height="150" Width="150" Foreground="Blue"></ProgressRing>
+    </Grid>
+</Page>

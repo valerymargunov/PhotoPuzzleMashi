@@ -1,0 +1,15 @@
+MainPackage=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\bin\x86\Release\Upload\PuzzleMash.10.0_1.1.8.0_x86.appx
+SymbolPackage=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\AppPackages\PuzzleMash.10.0_1.1.8.0\PuzzleMash.10.0_1.1.8.0_x86.appxsym
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_language-be.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_language-de.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_language-es.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_language-fr.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_language-it.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_language-pl.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_language-pt.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_language-ru.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_language-uk.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_scale-100.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_scale-125.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_scale-150.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMashi.10.0\_scale-400.appx

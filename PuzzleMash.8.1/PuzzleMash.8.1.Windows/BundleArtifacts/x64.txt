@@ -1,0 +1,13 @@
+MainPackage=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_x64.appx
+SymbolPackage=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\AppPackages\PuzzleMash.8.1.Windows_1.1.0.3_Test\PuzzleMash.8.1.Windows_1.1.0.3_x64.appxsym
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_language-be.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_language-de.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_language-es.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_language-fr.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_language-it.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_language-pl.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_language-pt.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_language-ru.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_language-uk.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_scale-140.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzleMashi\PuzzleMash.8.1\PuzzleMash.8.1.Windows\bin\x64\Release\PuzzleMash.8.1.Windows_1.1.0.3_scale-180.appx

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87274704-E321-4F85-972B-C3809DAAAF24}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhotoPuzzle</RootNamespace>
+    <AssemblyName>PhotoPuzzle</AssemblyName>
+    <SilverlightVersion>v4.0</SilverlightVersion>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>be-BY%3bfr-FR%3bde-DE%3bit-IT%3bpl-PL%3bpt-PT%3bru-RU%3bes-ES%3buk-UA</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PhotoPuzzle.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PhotoPuzzle.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30422.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;WINDOWS_PHONE7;FREE7</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;WINDOWS_PHONE7;FREE7</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Toolkit.Controls, Version=2.0.7.0, Culture=neutral, PublicKeyToken=c5fd7b72b1a17ce4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.0.7\lib\wp71\Coding4Fun.Toolkit.Controls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Advertising.Mobile, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Advertising.Mobile.UI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WriteableBitmapExWinPhone">
+      <HintPath>..\packages\WriteableBitmapEx.1.5.0.0\lib\sl4-wp71\WriteableBitmapExWinPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="WriteableBitmapExWinPhoneXnaDependant">
+      <HintPath>..\packages\WriteableBitmapEx.1.5.0.0\lib\sl4-wp71\WriteableBitmapExWinPhoneXnaDependant.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SuperPuzzle8.0\Advertising\AdsMyGames.cs">
+      <Link>Advertising\AdsMyGames.cs</Link>
+    </Compile>
+    <Compile Include="..\SuperPuzzle8.0\Helpers\PopupMessage.cs">
+      <Link>Helpers\PopupMessage.cs</Link>
+    </Compile>
+    <Compile Include="Advertising\MicrosoftAds.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameGlobal.cs" />
+    <Compile Include="GameInterface.xaml.cs">
+      <DependentUpon>GameInterface.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ImageRepository.cs" />
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tile.xaml.cs">
+      <DependentUpon>Tile.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="GameInterface.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tile.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\SuperPuzzle8.0\Images\games\b_300.png">
+      <Link>Images\games\b_300.png</Link>
+    </Content>
+    <Content Include="..\SuperPuzzle8.0\Images\games\cc-300.png">
+      <Link>Images\games\cc-300.png</Link>
+    </Content>
+    <Content Include="..\SuperPuzzle8.0\Images\games\fw-300.png">
+      <Link>Images\games\fw-300.png</Link>
+    </Content>
+    <Content Include="..\SuperPuzzle8.0\Images\games\mt-300.png">
+      <Link>Images\games\mt-300.png</Link>
+    </Content>
+    <Content Include="..\SuperPuzzle8.0\Images\games\tp-300.png">
+      <Link>Images\games\tp-300.png</Link>
+    </Content>
+    <Content Include="Langs\AppResLib.dll" />
+    <Content Include="Res\Image\Masha\1.jpg" />
+    <Content Include="Res\Image\Masha\10.jpg" />
+    <Content Include="Res\Image\Masha\11.jpg" />
+    <Content Include="Res\Image\Masha\12.jpg" />
+    <Content Include="Res\Image\Masha\13.jpg" />
+    <Content Include="Res\Image\Masha\1331331260_levtor_org.jpg" />
+    <Content Include="Res\Image\Masha\1343205959_82.jpg" />
+    <Content Include="Res\Image\Masha\181963336.jpg" />
+    <Content Include="Res\Image\Masha\2.jpg" />
+    <Content Include="Res\Image\Masha\23889el.jpg" />
+    <Content Include="Res\Image\Masha\4.jpg" />
+    <Content Include="Res\Image\Masha\4x576.jpg" />
+    <Content Include="Res\Image\Masha\5.jpg" />
+    <Content Include="Res\Image\Masha\6.jpg" />
+    <Content Include="Res\Image\Masha\7.jpg" />
+    <Content Include="Res\Image\Masha\8.jpg" />
+    <Content Include="Res\Image\Masha\99706_w465_h260_ff.jpg" />
+    <Content Include="Res\Image\Masha\gg.jpg" />
+    <Content Include="Res\Image\Masha\masha-i-medved.jpg" />
+    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="Langs\AppResLib.dll.0401.mui" />
+    <Content Include="Langs\AppResLib.dll.0402.mui" />
+    <Content Include="Langs\AppResLib.dll.0403.mui" />
+    <Content Include="Langs\AppResLib.dll.0404.mui" />
+    <Content Include="Langs\AppResLib.dll.0405.mui" />
+    <Content Include="Langs\AppResLib.dll.0406.mui" />
+    <Content Include="Langs\AppResLib.dll.0407.mui" />
+    <Content Include="Langs\AppResLib.dll.0408.mui" />
+    <Content Include="Langs\AppResLib.dll.0409.mui" />
+    <Content Include="Langs\AppResLib.dll.040B.mui" />
+    <Content Include="Langs\AppResLib.dll.040c.mui" />
+    <Content Include="Langs\AppResLib.dll.040D.mui" />
+    <Content Include="Langs\AppResLib.dll.040E.mui" />
+    <Content Include="Langs\AppResLib.dll.0410.mui" />
+    <Content Include="Langs\AppResLib.dll.0411.mui" />
+    <Content Include="Langs\AppResLib.dll.0412.mui" />
+    <Content Include="Langs\AppResLib.dll.0413.mui" />
+    <Content Include="Langs\AppResLib.dll.0414.mui" />
+    <Content Include="Langs\AppResLib.dll.0415.mui" />
+    <Content Include="Langs\AppResLib.dll.0416.mui" />
+    <Content Include="Langs\AppResLib.dll.0418.mui" />
+    <Content Include="Langs\AppResLib.dll.0419.mui" />
+    <Content Include="Langs\AppResLib.dll.041A.mui" />
+    <Content Include="Langs\AppResLib.dll.041B.mui" />
+    <Content Include="Langs\AppResLib.dll.041C.mui" />
+    <Content Include="Langs\AppResLib.dll.041D.mui" />
+    <Content Include="Langs\AppResLib.dll.041E.mui" />
+    <Content Include="Langs\AppResLib.dll.041F.mui" />
+    <Content Include="Langs\AppResLib.dll.0421.mui" />
+    <Content Include="Langs\AppResLib.dll.0422.mui" />
+    <Content Include="Langs\AppResLib.dll.0423.mui" />
+    <Content Include="Langs\AppResLib.dll.0424.mui" />
+    <Content Include="Langs\AppResLib.dll.0425.mui" />
+    <Content Include="Langs\AppResLib.dll.0426.mui" />
+    <Content Include="Langs\AppResLib.dll.0427.mui" />
+    <Content Include="Langs\AppResLib.dll.0429.mui" />
+    <Content Include="Langs\AppResLib.dll.042A.mui" />
+    <Content Include="Langs\AppResLib.dll.042C.mui" />
+    <Content Include="Langs\AppResLib.dll.042F.mui" />
+    <Content Include="Langs\AppResLib.dll.0439.mui" />
+    <Content Include="Langs\AppResLib.dll.043e.mui" />
+    <Content Include="Langs\AppResLib.dll.043F.mui" />
+    <Content Include="Langs\AppResLib.dll.0443.mui" />
+    <Content Include="Langs\AppResLib.dll.0464.mui" />
+    <Content Include="Langs\AppResLib.dll.0804.mui" />
+    <Content Include="Langs\AppResLib.dll.0809.mui" />
+    <Content Include="Langs\AppResLib.dll.080A.mui" />
+    <Content Include="Langs\AppResLib.dll.0816.mui" />
+    <Content Include="Langs\AppResLib.dll.081A.mui" />
+    <Content Include="Langs\AppResLib.dll.0c0a.mui" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pt173.png" />
+    <Content Include="pt62.png" />
+    <Content Include="Res\go-back.png" />
+    <Content Include="Res\help-button.png" />
+    <Content Include="Res\novfon.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.be-BY.resx" />
+    <EmbeddedResource Include="Resources\AppResources.de-DE.resx" />
+    <EmbeddedResource Include="Resources\AppResources.es-ES.resx" />
+    <EmbeddedResource Include="Resources\AppResources.fr-FR.resx" />
+    <EmbeddedResource Include="Resources\AppResources.it-IT.resx" />
+    <EmbeddedResource Include="Resources\AppResources.pl-PL.resx" />
+    <EmbeddedResource Include="Resources\AppResources.pt-PT.resx" />
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.ru-RU.resx" />
+    <EmbeddedResource Include="Resources\AppResources.uk-UA.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

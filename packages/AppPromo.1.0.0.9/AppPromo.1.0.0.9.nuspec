@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AppPromo</id>
+    <version>1.0.0.9</version>
+    <title>App Promo for Windows Phone and Windows 8</title>
+    <authors>jbienzms, toolboc (pdecarlo)</authors>
+    <owners>jbienzms, toolboc (pdecarlo)</owners>
+    <projectUrl>https://github.com/jbienzms/AppPromo</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Easy to use control available for Windows Phone and Windows 8 that gives ability to prompt users for app rating / feedback based on configurable properties.</description>
+    <summary>Easily obtain app ratings / feedback from your Windows Phone and Windows 8 users.  Supports over 25 languages out the box.  Support for WinJS, C++, and C# Store Projects!</summary>
+    <releaseNotes>Fixed a bug that caused reminder text to show up blank after the switch to separate winmds for Universal Apps.
+
+This package now includes all target plaforms in a single nuget package. The previous, separate packages will no longer be maintained.</releaseNotes>
+    <tags>Windows 8 Store controls rating feedback</tags>
+  </metadata>
+</package>

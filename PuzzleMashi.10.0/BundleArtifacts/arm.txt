@@ -1,0 +1,14 @@
+MainPackage=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_ARM.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_language-be.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_language-de.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_language-es.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_language-fr.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_language-it.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_language-pl.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_language-pt.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_language-ru.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_language-uk.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_scale-100.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_scale-125.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_scale-150.appx
+ResourcePack=D:\Cloud@Mail.Ru\Developers\PhotoPuzzle\SuperPuzzle\bin\ARM\Release\SuperPuzzle_1.1.9.0_scale-400.appx
