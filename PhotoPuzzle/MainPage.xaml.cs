@@ -45,11 +45,38 @@ namespace PhotoPuzzle
 
         private bool IsPictureSelected { get; set; }
 
+        IsolatedStorageSettings AppSettings;
+
         public MainPage()
         {
             InitializeComponent();
             GameGlobal.Random = new Random((int)DateTime.Now.Ticks);
             ListImages.ItemsSource = mImages;
+
+            AppSettings = IsolatedStorageSettings.ApplicationSettings;
+
+            if (AppSettings.Contains("countParts"))
+            {
+                CountParts = (int)AppSettings["countParts"];
+                SetSliderAmountText();
+            }
+            else
+            {
+                CountParts = 4;
+            }
+        }
+
+        private void SetSliderAmountText()
+        {
+            if (CountParts % 2 != 0 && K != 1)
+            {
+                SliderAmount.Text = (K * Math.Pow(CountParts, 2) - K).ToString();
+            }
+            else
+            {
+                SliderAmount.Text = (K * Math.Pow(CountParts, 2)).ToString();
+            }
+            countParts.Value = CountParts;
         }
 
         public string[] DirectoryGetFiles(string directory)
@@ -86,6 +113,16 @@ namespace PhotoPuzzle
                 GameGlobal.PictrueSource = (TempBorder.Child as Image).Source as BitmapImage;
             }
             GameGlobal.SetLevel(new Size(CountParts * K, CountParts));
+
+            if (!AppSettings.Contains("countParts"))
+            {
+                AppSettings.Add("countParts", CountParts);
+            }
+            if (AppSettings.Contains("countParts") && (int)AppSettings["countParts"] != CountParts)
+            {
+                AppSettings["countParts"] = CountParts;
+            }
+
             this.NavigationService.Navigate(new Uri("/GameInterface.xaml", UriKind.Relative));
         }
 
@@ -148,8 +185,9 @@ namespace PhotoPuzzle
                             K = 1;
                         }
                     }
-                    SliderAmount.Text = (K * Math.Pow(4, 2)).ToString();
-                    countParts.Value = 4;
+                    SetSliderAmountText();
+                    //SliderAmount.Text = (K * Math.Pow(4, 2)).ToString();
+                    //countParts.Value = 4;
                 }
                 //GameGlobal.PictrueSource = new BitmapImage(new Uri(e.AddedItems[0].ToString(), UriKind.RelativeOrAbsolute));
             }

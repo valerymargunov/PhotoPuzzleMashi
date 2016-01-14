@@ -133,6 +133,15 @@ namespace PhotoPuzzle.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Memory Training.
+        /// </summary>
+        public static string MemoryTraining {
+            get {
+                return ResourceManager.GetString("MemoryTraining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nature.
         /// </summary>
         public static string Nature {

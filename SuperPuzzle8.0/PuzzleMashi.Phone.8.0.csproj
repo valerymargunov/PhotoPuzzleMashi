@@ -191,6 +191,8 @@
     <Content Include="Images\games\b_300.png" />
     <Content Include="Images\games\cc-300.png" />
     <Content Include="Images\games\fw-300.png" />
+    <Content Include="Images\games\fw-en-300.png" />
+    <Content Include="Images\games\fw-it-300.png" />
     <Content Include="Images\games\mt-300.png" />
     <Content Include="Images\games\tp-300.png" />
     <Content Include="pm300.png" />

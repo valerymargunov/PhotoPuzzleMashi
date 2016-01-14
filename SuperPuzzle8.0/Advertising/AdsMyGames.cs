@@ -30,9 +30,27 @@ namespace PhotoPuzzle.Advertising
             },
             new AdsGame
             {
+                AppId = "b8d768c7-11b5-4eea-8c3d-f8012148e97d",
+                Icon = new Uri("/Images/games/fw-en-300.png", UriKind.RelativeOrAbsolute),
+                Name = "FillWords",
+                TitleMessage = AppResources.AdsTitleMessage,
+                Game = Game.FillWords,
+                SupportLanguages = SupportLanguages.EN
+            },
+            new AdsGame
+            {
+                AppId = "0585296f-f9c1-483e-9e99-795219e1410f",
+                Icon = new Uri("/Images/games/fw-it-300.png", UriKind.RelativeOrAbsolute),
+                Name = "Riempire Parole",
+                TitleMessage = AppResources.AdsTitleMessage,
+                Game = Game.RiempireParole,
+                SupportLanguages = SupportLanguages.IT
+            },
+            new AdsGame
+            {
                 AppId = "0f892535-518b-4199-902c-711130e7c7bd",
                 Icon = new Uri("/Images/games/mt-300.png", UriKind.RelativeOrAbsolute),
-                Name = "Тренировка Памяти",
+                Name = AppResources.MemoryTraining,
                 TitleMessage = AppResources.AdsTitleMessage,
                 Game = Game.ТренировкаПамяти,
                 SupportLanguages = SupportLanguages.All
@@ -41,7 +59,7 @@ namespace PhotoPuzzle.Advertising
             {
                 AppId = "4d4336f6-29a4-4128-935b-5885d67c79ad",
                 Icon = new Uri("/Images/games/tp-300.png", UriKind.RelativeOrAbsolute),
-                Name = "Говорящий Пазл",
+                Name = "Talking Puzzle",
                 TitleMessage = AppResources.AdsTitleMessage,
                 Game = Game.ГоворящийПазл,
                 SupportLanguages = SupportLanguages.All
@@ -50,7 +68,7 @@ namespace PhotoPuzzle.Advertising
             {
                 AppId = "0363c883-6428-4bd6-b599-f11796c69cc0",
                 Icon = new Uri("/Images/games/b_300.png", UriKind.RelativeOrAbsolute),
-                Name = "Бутылочка",
+                Name = "Bottle",
                 TitleMessage = AppResources.AdsTitleMessage,
                 Game = Game.Бутылочка,
                 SupportLanguages = SupportLanguages.All
@@ -59,7 +77,7 @@ namespace PhotoPuzzle.Advertising
             {
                 AppId = "2c1abff6-596d-45e4-8f25-fed9ae780b4b",
                 Icon = new Uri("/Images/games/cc-300.png", UriKind.RelativeOrAbsolute),
-                Name = "Собери Кота",
+                Name = "Collect Сat",
                 TitleMessage = AppResources.AdsTitleMessage,
                 Game = Game.СобериКота,
                 SupportLanguages = SupportLanguages.All

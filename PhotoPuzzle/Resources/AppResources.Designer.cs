@@ -133,6 +133,15 @@ namespace PhotoPuzzle.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Memory Training.
+        /// </summary>
+        public static string MemoryTraining {
+            get {
+                return ResourceManager.GetString("MemoryTraining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nature.
         /// </summary>
         public static string Nature {
@@ -156,6 +165,24 @@ namespace PhotoPuzzle.Resources {
         public static string Play {
             get {
                 return ResourceManager.GetString("Play", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LeftToRight.
+        /// </summary>
+        public static string ResourceFlowDirection {
+            get {
+                return ResourceManager.GetString("ResourceFlowDirection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to en-US.
+        /// </summary>
+        public static string ResourceLanguage {
+            get {
+                return ResourceManager.GetString("ResourceLanguage", resourceCulture);
             }
         }
         

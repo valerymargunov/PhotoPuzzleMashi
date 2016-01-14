@@ -141,6 +141,9 @@
   <data name="GameComplete" xml:space="preserve">
     <value>Jeu Complet!</value>
   </data>
+  <data name="MemoryTraining" xml:space="preserve">
+    <value>la formation de la mémoire</value>
+  </data>
   <data name="Nature" xml:space="preserve">
     <value>La nature</value>
   </data>
@@ -149,6 +152,14 @@
   </data>
   <data name="Play" xml:space="preserve">
     <value>Joue</value>
+  </data>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>fr-FR</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="TomAndFriends" xml:space="preserve">
     <value>Tom et ses amis</value>

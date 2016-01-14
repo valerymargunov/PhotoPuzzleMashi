@@ -141,6 +141,9 @@
   <data name="GameComplete" xml:space="preserve">
     <value>Game Complete!</value>
   </data>
+  <data name="MemoryTraining" xml:space="preserve">
+    <value>Memory Training</value>
+  </data>
   <data name="Nature" xml:space="preserve">
     <value>Nature</value>
   </data>

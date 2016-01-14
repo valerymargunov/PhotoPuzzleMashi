@@ -141,6 +141,9 @@
   <data name="GameComplete" xml:space="preserve">
     <value>Completa el juego!</value>
   </data>
+  <data name="MemoryTraining" xml:space="preserve">
+    <value>Entrenamiento de la memoria</value>
+  </data>
   <data name="Nature" xml:space="preserve">
     <value>Naturaleza</value>
   </data>
